@@ -5,7 +5,7 @@ var file_path = path.join(__dirname, "data.txt");
 
 //Check if file exist
 if (!fs.existsSync(file_path)) {
-    fs.writeFileSync('./my.txt', '{"key":"value"}');
+    fs.writeFileSync('./data.txt', '{"key":"value"}');
 }
 
 var dictionary = JSON.parse(fs.readFileSync(file_path));
